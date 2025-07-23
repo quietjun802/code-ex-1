@@ -1,0 +1,185 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: #404040;
+}
+.inner {
+    position: relative;
+    max-width: 1640px;
+    margin: auto;
+    height: 100%;
+}
+section {
+    position: relative;
+    z-index: 0;
+    min-height: 100vh;
+    background-color: antiquewhite;
+}
+section h2 {
+    font-size: 120px;
+}
+section p {
+    font-size: 17px;
+    padding: 30px 0 50px;
+}
+a.btn {
+    background-color: #000;
+    display: inline-block;
+    padding: 10px 40px;
+    font-size: 22px;
+    border-radius: 25px;
+    color: #fff;
+}
+header {
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+header .title a{
+    color: aliceblue;
+}
+header .inner {
+    display: flex;
+    justify-content: space-between;
+}
+nav ul {
+    display: flex;
+    gap: 42px;
+}
+nav ul a {
+    color: #fff;
+    font-size: 18px;
+}
+#s01{
+    height: 100vh;
+    background: url(../img/Leicester.jpg) no-repeat center/cover;
+}
+#s01 .inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#s01 .t-wrap> * {
+    color: #fff;
+}
+
+#s02 {
+  background: url(../img/Leicester2.jpg) no-repeat center/cover;
+  padding:200px 0;
+}
+#s02 .t-wrap {
+    position: relative;
+    display: inline-block;
+}
+
+#s02 .t-wrap::before {
+    display: block;
+    content: "";
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #404040;
+    position: absolute;
+    top: -20px;
+    right: 0;
+}
+
+#s02 .t-wrap h2 {
+    font-size: 120px;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+}
+
+#s02 .t-wrap p {
+    position: relative;
+    font-size: 17px;
+    margin-top: 30px;
+}
+.s02-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap:16px;
+}
+.s02-list li {
+    width: 260px;
+    height: 218px;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.s02-list li p{
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+#s03 {
+  background-color: #fff;
+}
+
+#s03 .inner {
+  display: flex;
+  height: 100vh;
+}
+
+#s03 .t-wrap {
+  width: 50%;
+  background-color: #817171;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+}
+
+#s03 .img-wrap {
+  width: 50%;
+  background: url(../img/pep.jpg) no-repeat center/cover;
+}
+#s04 {
+  padding: 200px 0;
+  background: url(../img/Leicester3.jpg) no-repeat center/cover;
+}
+
+#s04 .t-wrap {
+  position: relative;
+}
+
+#s04 .t-wrap a.btn {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.s04-list{
+    display: flex;
+    justify-content: center;
+    gap:48px;
+    text-align: center;
+    max-width: 1400px;
+    margin:auto;
+}
+.s04-list li{
+    height: 350px;
+    background-color: #dbdbdb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+}
+.s04-list li:nth-child(even){
+    margin-top: 60px;
+}
